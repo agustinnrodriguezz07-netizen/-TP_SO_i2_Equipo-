@@ -1,0 +1,30 @@
+Integrantes:
+Rodriguez Agustin
+Ramírez Ciro Jesus Nicolás
+Sabetay Agustin
+
+a-¿Cómo actualizo mi repositorio, al estado que esté el repo que hice FORK?
+Primero descargo los cambios del repositorio original con git fetch. Despues, los incorporo a mi rama con git merge.
+
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+Si, alfa puede agregar el repositorio de gamma como remoto, descargar sus cambios con git fetch e incorporarlos a su rama com git merge.
+
+
+c) ¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+
+Sí, es posible incorporar al fork de GAMMA los cambios realizados en el fork de ALFA. 
+Sin embargo, no se actualiza automáticamente mediante la opción habitual de sincronización, 
+porque esta permite incorporar los cambios del repositorio original de BETA. 
+Para obtener los cambios de ALFA, se puede configurar su repositorio como remoto y traer sus cambios, 
+o hacer que ALFA integre sus modificaciones en el repositorio original mediante un Pull Request, 
+para que luego GAMMA actualice su fork desde allí.
+
+d) ¿Los datos que tenía en mi repositorio, editados por mí, se pierden si quiero actualizar el fork?
+
+No necesariamente. Al actualizar un fork, Git intenta incorporar los cambios del repositorio original 
+y conservar los cambios propios. Si existen modificaciones incompatibles en las mismas partes de un archivo, 
+pueden producirse conflictos que deben resolverse manualmente. Por eso, es importante revisar los cambios y 
+resolver los conflictos antes de continuar.
+
+e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
